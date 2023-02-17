@@ -38,3 +38,20 @@
     </dd>
   </dl>
 </div>
+<h2>23.02.17 - HTML - 하이퍼링크와 이미지, 비디오</h2>
+<p>
+  a태그는 <a HTML <a>요소(앵커)는 href속성을 통해 다른 페이지나 같은 페이지의 어느 위치,<br>
+파일, 이메일 주소와 그 외 다른 URL로 연결할 수 있는 하이퍼링크를 만들어준다.<br>
+ex) <a href=”링크주소”><br>
+img태그<br>
+ex) <img src=”URL” alt=””><br>
+a href 태그<br>
+<a href=”mailto:메일주소”>메일보내기</a><br>
+<a href=”링크” download> **다운로드하기**</a><br>
+<a href=”#id”> 바로가기 </a><br>
+<video>태그는
+autoplay 자동재생, 
+muted 음소거(구글정책상 필수로 넣어야한다.), 
+loop 반복 재생, 
+controls 컨트롤바이있다.
+</p>
