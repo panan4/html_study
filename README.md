@@ -56,3 +56,27 @@ loop 반복 재생,
 controls 컨트롤바이있다.
 </p>
 <h2>23.02.19 - HTML - 해당 주 초반에 배운 내용 복습 1회 진행</h2>
+<h2>23.02.20 - HTML - </h2>
+    <table>
+        <thead>
+          <tr>
+            <th><em>구분</em></th>
+            <th><em>태그명</em></th>
+            <th><em>의미</em></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">block</td>
+            <td>&lt;tr&gt;</td>
+            <td>가로행 태그</td>
+          </tr>
+          <tr>
+            <td>&lt;td&gt;</td>
+            <td>내용(열)태그</td>
+          </tr>
+           <tr>
+            <td>&lt;th&gt;</td>
+            <td>제목(열)태그</td>
+          </tr>
+       </table>
