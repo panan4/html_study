@@ -56,7 +56,7 @@ loop 반복 재생,
 controls 컨트롤바이있다.
 </p>
 <h2>23.02.19 - HTML - 해당 주 초반에 배운 내용 복습 1회 진행</h2>
-<h2>23.02.20 - HTML - </h2>
+<h2>23.02.20 - HTML - Table</h2>
     <table>
         <thead>
           <tr>
