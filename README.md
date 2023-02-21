@@ -80,3 +80,20 @@ controls 컨트롤바이있다.
             <td>제목(열)태그</td>
           </tr>
        </table>
+<h2>23.02.20 - HTML - Form</h2>
+<!-- <form action="#" method="포스트,겟">
+    <fieldset>
+        <legend>이름</legend>
+        <input type="텍스트,라디오,체크박스,패스워드,이메일 등등" name="태그이름" placeholder="입력값">
+        <input type="라디오" name="라디오태그시작성폼" value="태그값">
+        <input type="체크박스" name="라디오태그시작성폼" value="태그값">
+    </fieldset>
+</form> -->
+<form action="#" method="get">
+<fieldeset>
+<legend>퀴즈</legend>
+<span>다음 중 label for와 연관된 input 속성은?</span><br>
+<label><input type="radio" name="quiz" value=id">1. id</label><br>
+<label><input type="radio" name="quiz" value=class">2. id</label><br>
+<label><input type="radio" name="quiz" value=name">3. id</label><br>
+</fieldeset>
