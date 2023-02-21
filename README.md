@@ -96,4 +96,11 @@ controls 컨트롤바이있다.
 <label><input type="radio" name="quiz" value=id">1. id</label><br>
 <label><input type="radio" name="quiz" value=class">2. class</label><br>
 <label><input type="radio" name="quiz" value=name">3. name</label><br>
+  
+<span>다음 중 label type에 해당하지 않는 것은?</span><br>
+<label><input type="radio" name="quiz" value=id">1. text</label><br>
+<label><input type="radio" name="quiz" value=password">2. password</label><br>
+<label><input type="radio" name="quiz" value=radio">3. radio</label><br>
+<label><input type="radio" name="quiz" value=checkbox">4. checkbox</label><br>
+<label><input type="radio" name="quiz" value=name">5. name</label><br>
 </fieldeset>
