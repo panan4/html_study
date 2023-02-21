@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from_01</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>회원가입양식</legend>
+            <dl>
+                <dt>아이디</dt>
+                <dd><input type="text" autofocus placeholder="아이디를 입력하세요" name="user_id" minlength="7" maxlength="13"></dd>
+                <dt>비밀번호</dt>
+                <dd><input type="password" placeholder="비밀번호를 입력하세요" name="user_pw" minlength="7" maxlength="13"></dd>
+                <dt>주민등록번호</dt>
+                <dd><input type="number" placeholder="주민등록번호 앞자리 6자리" maxlength="6" name="regi _first">-<input type="password" placeholder="주민등록번호 뒷자리 7자리" maxlength="7" name="regi_last"></dd>
+                <dt>이메일</dt>
+                <dd><input type="email" name="email_first"> @ 
+                    <select name="mail_address">
+                        <option value="none">이메일을 선택하세요</option>
+                        <option value="google">google.com</option>
+                        <option value="naver">naver.com</option>
+                        <option value="kakao">kakao.com</option>
+                    </select>
+                </dd>
+                <dt>연락처</dt>
+                <dd>
+                    <select name="Tell">
+                        <option value="noen">통신사를 선택하세요</option>
+                        <option value="SKT">SKT</option>
+                        <option value="LG">LG</option>
+                        <option value="KT">KT</option>
+                    </select>
+                </dd>
+                <dd>
+                    010-<input type="number" placeholder="0000" maxlength="4" name="p_first">
+                    -
+                    <input type="number" placeholder="0000" maxlength="4" name="p_last">
+                </dd>
+                <dt>나의 모물 1호는? 비밀번호 질문 답</dt>
+                <dd><textarea name="find_pw_answer" cols="20" rows="5"></textarea></dd>
+                <dt>관심사</dt>
+                <dd>
+                    <label for="hobby_html"><input id="hobby_html" type="checkbox" value="hobby_html" name="hobby">HTML</label>
+                    <input id="hobby_css" type="checkbox"><label for="hobby_css" value="hobby_css" name="hobby">CSS</label>
+                    <input type="checkbox" id="hobby_js"><label for="hobby_js" value="hobby_js" name="hobby" >JavaScript</label>
+                </dd>
+                <dt>성별</dt>
+                <dd>
+                    <input type="radio" name="gender" value="male" id="g_male"><label for="g_male" value="male" name="gender">남</label>
+                    <input type="radio" name="gender" value="female" id="g_female"><label for="g_female" value="female" name="gender">여</label>
+                    <input type="radio" name="gender" value="none" id="g_none"><label for="g_none" value="none" name="gender">동의안함</label>
+                </dd>
+                <dt>선호하는 음료</dt>
+                <dd>
+                    <select name="hobby2" id="">
+                        <optgroup label="커피">
+                            <option value="c1">아메리카노</option>
+                            <option value="c2">카페라떼</option>
+                            <option value="c3">에스프레소</option>
+                        </optgroup>
+                        <optgroup label="티">
+                            <option value="t1">얼그레이티</option>
+                            <option value="t2">자스민티</option>
+                        </optgroup>
+                    </select>
+                </dd>
+            </dl>
+            <div class="btn_g">
+                <button type="reset">취소</button>
+                <button type="submit">가입</button>
+                <button type="button">범용기능</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
