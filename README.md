@@ -118,13 +118,13 @@ controls 컨트롤바이있다.
 import는 제일위, css태그는 적용태그 {}안에 넣주면 된다.
   
   **오늘의 복습하기**
-html,body,h1,h2,h3,h4,h5,h6,/* 제목태그 */
-p,ul,ol,li,blockquote,dl,dd,dt,address,video,/* 블록태그 */
-q, strong,em,del,sup,sub,s,code,img,a,/* 인라인태그 */
-table, tr, th, td, thead, tbody, tfoot,/* 테이블태그 */
-form,fieldset,legend,input,button,label,textarea,select,option,/* 폼태그 */
-header,main,section,article,footer,aside,nav,figure,figcaption,/* 시멘틱태그 */
-div,span/* 그룹태그 */
+html,body,h1,h2,h3,h4,h5,h6,/* 제목태그 */<br>
+p,ul,ol,li,blockquote,dl,dd,dt,address,video,/* 블록태그 */<br>
+q, strong,em,del,sup,sub,s,code,img,a,/* 인라인태그 */<br>
+table, tr, th, td, thead, tbody, tfoot,/* 테이블태그 */<br>
+form,fieldset,legend,input,button,label,textarea,select,option,/* 폼태그 */<br>
+header,main,section,article,footer,aside,nav,figure,figcaption,/* 시멘틱태그 */<br>
+div,span/* 그룹태그 */<br>
   
   **VScode Tip!**
 
