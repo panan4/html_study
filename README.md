@@ -80,7 +80,7 @@ controls 컨트롤바이있다.
             <td>제목(열)태그</td>
           </tr>
        </table>
-<h2>23.02.20 - HTML - Form</h2>
+<h2>23.02.22 - HTML - Form</h2>
 <!-- <form action="#" method="포스트,겟">
     <fieldset>
         <legend>이름</legend>
@@ -109,3 +109,4 @@ controls 컨트롤바이있다.
 <label><input type="radio" name="quiz" value=checkbox">4. checkbox</label><br>
 <label><input type="radio" name="quiz" value=name">5. name</label><br>
 </fieldeset>  
+<h2>23.02.223 - CSS - Form</h2>
