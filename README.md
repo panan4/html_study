@@ -109,4 +109,25 @@ controls 컨트롤바이있다.
 <label><input type="radio" name="quiz" value=checkbox">4. checkbox</label><br>
 <label><input type="radio" name="quiz" value=name">5. name</label><br>
 </fieldeset>  
-<h2>23.02.23 - CSS - Form</h2>
+<h2>23.02.23 - CSS - font, selector</h2>
+글꼴 적용 방법은 웹 주소 글꼴을 가져오는 법!
+
+[https://fonts.google.com/](https://fonts.google.com/)
+
+위 페이지에서 글꼴을 가져와 사용한다. 사용 방법은 복사하여
+import는 제일위, css태그는 적용태그 {}안에 넣주면 된다.
+  
+  **오늘의 복습하기**
+html,body,h1,h2,h3,h4,h5,h6,/* 제목태그 */
+p,ul,ol,li,blockquote,dl,dd,dt,address,video,/* 블록태그 */
+q, strong,em,del,sup,sub,s,code,img,a,/* 인라인태그 */
+table, tr, th, td, thead, tbody, tfoot,/* 테이블태그 */
+form,fieldset,legend,input,button,label,textarea,select,option,/* 폼태그 */
+header,main,section,article,footer,aside,nav,figure,figcaption,/* 시멘틱태그 */
+div,span/* 그룹태그 */
+  
+  **VScode Tip!**
+
+ctrl+k → ctrl+\ 누르면 위 아래로 볼 수 있다.(페이지 나누기)
+
+위아래 코드 순서바꾸기는 alt[방향키 위/아래](https://www.notion.so/9ec0a79cd8414d03b23cc4236392463d)
