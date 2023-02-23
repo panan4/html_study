@@ -109,4 +109,4 @@ controls 컨트롤바이있다.
 <label><input type="radio" name="quiz" value=checkbox">4. checkbox</label><br>
 <label><input type="radio" name="quiz" value=name">5. name</label><br>
 </fieldeset>  
-<h2>23.02.223 - CSS - Form</h2>
+<h2>23.02.23 - CSS - Form</h2>
