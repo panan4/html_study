@@ -1,0 +1,31 @@
+.a 
+{
+    background-color: aqua;
+    font-size: 3rem;
+    display: inline-block;
+    width: 300px; height: 200px;
+}
+.b
+{
+    background-color: pink;
+    font-size: 5rem;
+    display: inline-block;
+    width: 200px; height: 200px;
+}
+.box 
+{
+    width: 100px; height: 100px;
+}
+.c 
+{
+    background-color: yellow;
+}
+.d 
+{
+    background-color: skyblue;
+    padding: 41px;
+    margin: 10px;
+    
+    /* width: 50px; height: 80px; */
+    /* box-sizing: border-box; */
+}

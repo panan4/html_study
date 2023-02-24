@@ -16,8 +16,14 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>경영이념|SPC삼립</title>
+    <!-- 외부스타일시트 -->
     <link rel="stylesheet" href="./styles/reset.css" type="text/css">
     <link rel="stylesheet" href="./styles/main.css" type="text/css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/삼립로고.png" type="image/x-icon">
+    <link rel="icon" href="./images/삼립로고.png" type="image/x-icon">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -27,7 +33,7 @@
             </a>
         </h1>
         <nav>
-            <a href="#">COMPANY</a>
+            <a href="#" class="active">COMPANY</a>
             <a href="#">BRANDS</a>
             <a href="#">IR</a>
             <a href="#">SNS</a>
@@ -39,14 +45,17 @@
         </div>
     </header>
     <main>
-        <div class="bg">
+        <div class="bg border">
             <dl class="top">
-                <dt>현재 페이지 경로</dt>
-                <dd>HOME 
-                    Company
+                <dt class="skip">현재 페이지 경로</dt>
+                <dd><i class="fa-solid fa-house-chimney" title="홈"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
                     <span>
-                        SPC삼립 소개
+                        Company
                     </span>
+                    SPC 삼립소개
+                    <i class="fa-solid fa-chevron-right"></i>
                     <em>
                         경영이념
                     </em>
@@ -92,9 +101,9 @@
                     GOAL
                 </h2>
                 <ul>
-                    <li>매출 2.7조</li>
+                    <li class="m1">매출 2.7조</li>
                     <li>영업이익 5%</li>
-                    <li>기업가치 2.5조</li>
+                    <li class="m3">기업가치 2.5조</li>
                 </ul>
                 <h2>
                     STRATEGY
