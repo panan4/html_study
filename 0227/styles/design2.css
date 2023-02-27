@@ -1,0 +1,32 @@
+
+.wrap::after {clear: both; display:block; content:'d';}
+.wrap 
+{
+    background-color: aliceblue;
+    width: 500px;
+}
+.wrap .a 
+{
+    border: 4px solid red;
+        float: left;
+}
+.wrap .b 
+{
+    border: 4px solid blue;
+    float: right;
+}
+.wrap .c
+{
+    border: 4px solid green;
+    float: left; /* 형제들의 이전 float의 위치를 초기화하고 새로운 행을 선언한다. */
+}
+.wrap .ab 
+{
+    background-color: yellow;
+    width: 100px; height: 100px;
+}
+.next
+{ 
+    width: 500px; height: 250px;
+    background-color: gold;
+}

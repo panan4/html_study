@@ -1,0 +1,38 @@
+header::after {clear: both; display: block; content:'';}
+header 
+{
+    background-color: blueviolet;
+    
+}
+header h1 
+{
+    background-color: darkcyan;
+    float: left;
+}
+header form 
+{
+    background-color: pink;
+    float: left;
+}
+header .lnb 
+{
+    background-color: green;
+    float: right;
+}
+header .lnb a 
+{
+
+}
+header .lnb, header form, header h1 
+{
+    width: 100px; height: 100px;
+}
+main {}
+main .path {}
+main .path .skip {}
+main .path dd {}
+main .path dd span {}
+/* main .path dd span::after 
+{
+    display: inline; content: '\f054';
+} */

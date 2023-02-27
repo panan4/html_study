@@ -1,0 +1,30 @@
+.wrap::after {clear: both; display: block; content: '';}
+.wrap 
+{
+    background-color: aqua;
+    /* overflow: hidden; */
+}
+.wrap a 
+{
+    width: 100px; height: 100px;
+    background-color: chartreuse;
+    border: 2px solid red;
+    display: block;
+    font-size: 5rem;
+}
+.wrap .a 
+{
+    float: left;
+}
+.wrap .b 
+{
+    float: left;
+}
+.wrap .c 
+{
+    float: left;
+}
+.wrap .d 
+{
+    float: right;
+}
