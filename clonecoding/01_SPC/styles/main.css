@@ -1,57 +1,159 @@
+/* all_layout */
+header,
+/* main .bg .top,
+main .bg_W .title,
+main .bg .contents,
+main .bg_w .contents, */
+main > div > *,
+footer .ft_G, footer address,
+footer > p
+{
+    /* border: 5px solid darkkhaki; */
+    width:1200px;
+    margin:0 auto;
+}
+main > div > * 
+{
+    text-align: center;
+}
 /*header-----------------------------------------*/
-header {}
-header h1 {}
-header h1 a {}
-header h1 a img {}
-header nav {}
-header nav a {font-size: 1.063rem;}
-header nav .active {color:#36b4e5;}
-header .lnb {}
-header .lnb a {}
+header 
+{
+    height: 92px;
+}
+header h1 
+{
+    float: left;
+    margin-top: 5px;
+}
+header h1 a 
+{
+    
+}
+header h1 a img {width: 60px;}
+header nav 
+{
+    float: left;
+    line-height: 92px;
+    margin-left: 300px;
+}
+header nav a 
+{
+    font-size: 1.063rem;
+    padding-left: 30px;
+}
+header nav .active {color:#36b4e5; padding: 0;}
+header .lnb 
+{
+    float: right;
+    line-height: 92px;
+}
+header .lnb a { }
+header .lnb a:nth-child(2)::before
+{
+    content: '|';
+    display: inline;
+    padding-left: 10px;
+    margin-right: 10px;
+}
 /*main-------------------------------------------*/
 main {}
 /* 공통배경 */
-main .bg {background-color: #f1f1f1;}
-main .bg_w {}
+main .bg 
+{
+    background-color: aqua;
+    /* padding: 50px 0; */
+}
+main .bg_w 
+{
+    padding: 50px 0;
+}
 /* 현재페이지경로 */
 main .border 
 {
     /* border-top: 1px solid black; border-bottom:1px solid black; */
     border: 1px solid black; border-right: none; border-left: none;
 }
-main .bg .top {}
+main .bg .top 
+{
+    padding: 20px;
+    text-align:  right;
+}
 main .bg .top dd {}
 main .bg .top dd span {}
 main .bg .top dd em {}
 /* 경영이념 제목 */
 main .bg_w .title {}
 main .bg_w .title h1 {font-size: 2.5rem;}
-main .bg_w .title p {}
+main .bg_w .title p {margin-top: 10px;}
 /* 경영이념 내용 */
-main .bg > .contents p {}
+main .bg .contents {padding: 50px 0;}
+main .bg > .contents p {line-height: 25px;}
 /* 경영이념 비전 */
 main .bg_w > .contents {}
-main .bg_w > .contents h2 {font-size: 1.375rem; color: #36b4e5;}
+main .bg_w > .contents h2 {font-size: 1.375rem; color: #36b4e5; margin-bottom: 30px;}
+main .bg_w > .contents p:nth-child(2) {margin-bottom: 100px;}
 main .bg_w > .contents p {font-size: 1.938rem; line-height: 1.5; letter-spacing: -0.02;}
 /* 경영이념 giol, strategy */
 main .bg > .contents {}
-main .bg > .contents h2 {font-size: 1.25rem;}
-main .bg > .contents ul {}
+main .bg .contents h2 {font-size: 1.25rem;}
+main .bg .contents h2:nth-child(3) 
+{
+    /* background-color: #f3c300; */
+    margin-top: 50px;
+}
+main .bg > .contents ul 
+{
+    /* overflow: hidden; */
+    display: inline-block;
+}
 main .bg > .contents ul li 
 {
     font-size: 1.5rem; 
     line-height: 1.5; 
     letter-spacing: -0.02; 
     background-color: white;
+    /* display: inline-block; */
+    float:left;
+    /* box-shadow: x y blur color; */
+    box-shadow: 0 0 10px gray;
+    margin-left: -10px;
+    margin-top: 50px;
 }
 main .bg > .contents ul .m1 {background-color: #36b4e5;}
 main .bg > .contents ul .m3 {background-color: #f3c300;}
 main .bg > .contents ul li h3 {font-size: 1.063rem;}
-main .bg > .contents ul li p {}
+main .bg > .contents ul li p 
+{
+    
+}
+main .bg > .contents ul li
+{
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    line-height: 250px;
+}
+main .bg > .contents .one 
+{
+    
+}
+main .bg > .contents .one li
+{
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    padding: 60px 20px 0px;
+}
 /*footer-----------------------------------------*/
-footer {}
+footer 
+{
+    padding: 50px;
+}
 footer .ft_G {}
-footer .ft_G .ft_G_Left {}
+footer .ft_G::after {clear: both; display: block; content: '';}
+footer .ft_G .ft_G_Left 
+{
+    float: left;
+}
 footer .ft_G .ft_G_Left a 
 {
     font-size: 1.05rem;
@@ -60,7 +162,14 @@ footer .ft_G .ft_G_Left a
     letter-spacing: -0.02;
     
 }
-footer .ft_G .ft_G_Right {}
-footer .ft_G .ft_G_Right a {border: 1px solid black; line-height: 3;}
-footer address {}
-footer address+p {}
+footer .ft_G .ft_G_Right 
+{
+    float:right;
+}
+footer .ft_G .ft_G_Right a {
+    border: 1px solid black; line-height: 3;
+    padding: 10px 20px;
+}
+footer address 
+{line-height: 1.5;;}
+footer address+p {padding-top: 15px;}

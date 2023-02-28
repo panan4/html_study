@@ -1,0 +1,37 @@
+.box .con::after {clear:both; display:block ; content: '';}
+.box 
+{
+    background-color: aqua;
+}
+.box .con 
+{
+    background-color: pink;
+    width: 800px;
+    padding: 50px;
+    margin:0 auto;
+}
+.box .con > * 
+{
+    width: 100px; height: 100px;
+}
+.box .con h1 
+{
+    background-color: lime;
+    float: left;
+    text-align: center;
+    /* padding-top: 40px; */
+    line-height: 100px;
+}
+.box .con p 
+{
+    background-color: coral;
+    float: right;
+    text-align: right;
+    line-height: 100px;
+}
+.box .con h1+p 
+{
+    background-color: darkcyan;
+    float: left;
+    text-align: center;
+}
