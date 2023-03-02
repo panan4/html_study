@@ -1,0 +1,173 @@
+header 
+{
+    width: 1080px;
+    margin: 0 auto;
+}
+header form {
+    border: 3px solid purple;
+    border-radius: 7px;
+    width: 435px; height: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin: 20px auto 30px;
+}
+header form fieldset { border:none;}
+header form fieldset legend {}
+header form fieldset input {
+    width: 350px;
+    border: none;
+    float: left;
+    color: gainsboro;
+}
+header form fieldset button 
+{
+    background-color: purple; color: white;
+    width: 28px; height: 27px; float: right;
+}
+/* header form fieldset button i::after 
+{
+    font-weight: 100; display: inline; content: 'f002';
+} */
+/* 메인시작 */
+main {width: 1080px; margin: 0 auto;/* border: 1px solid gainsboro; */}
+/* 머리부분 */
+main aside {width: 200px; float: left; margin-right: 30px;}
+main aside h2 {font-size: 2.5rem; color: #1e61a8; margin: 20px 0; text-align: center;}
+main aside .menu {border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;}
+main aside .menu a 
+{
+    font-size: 1.125rem;
+    display: block;
+    margin: 20px 0 20px 10px;
+}
+main aside .menu a:nth-of-type(2) 
+{
+    background-color: #1e61a8;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+/* 좌측 */
+/* main .container::after {clear: both; display: block; content: "";} */
+main .container 
+{
+    width: 848px;
+    height: 720px;
+    float: right;
+    border: 1px solid gainsboro;
+}
+/* 메인박스 */
+main .container .title_path 
+{
+    padding: 20px 15px;
+    background-color: #e6e6e6;/*  overflow: hidden; */
+    border-bottom: 1px solid gray;
+}
+main .container .title_path::after {clear: both; display: block; content: "";}
+main .container .title_path h1 {float:left; font-weight: 700;}
+main .container .title_path h1 dl {}
+main .container .title_path dl dt {}
+main .container .title_path dl dd {float: right; font-size: 0.875rem;}
+main .container .title_path dl dd img {}
+main .container .title_path dl dd span {}
+/* 메인상단메뉴 */
+/* main .container .contents::after {clear: both; display: block; content: "";} */
+main .container .contents 
+{
+    width: 720px;  height:350px;
+    background-color: #e6e6e6; margin: 40px auto;
+}
+main .container .contents .login_box 
+{
+    background-image: url(../images/bg\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 530px;
+    background-size: 20%;
+}
+main .container .contents .login_box h2 {font-size: 2.5rem;padding:40px 0 0 60px; letter-spacing: -0.02;}
+main .container .contents .login_box h2 em {font-size: 2.5rem; color: #1e61a8; letter-spacing: -0.02;}
+main .container .contents .login_box p 
+{
+    margin: 20px 0 20px 60px;
+}
+main .container .contents .login_box p em {color: #888;}
+main .container .contents .login_box form {}
+main .container .contents .login_box form fieldset {border: none;}
+main .container .contents .login_box form fieldset legend {}
+main .container .contents .login_box form fieldset .id_pw_box {float: left;}
+main .container .contents .login_box form fieldset .id_pw_box ul 
+{
+    margin: 0 0 0px 60px; border-top: 1px solid #888;
+}
+main .container .contents .login_box form fieldset .id_pw_box ul li {}
+main .container .contents .login_box form fieldset .id_pw_box ul li:nth-of-type(1) 
+{
+    margin-top: 20px; margin-bottom: 8px;
+}
+main .container .contents .login_box form fieldset .id_pw_box ul li label 
+{
+    font-size: 0.75rem;
+    width: 70px;
+}
+main .container .contents .login_box form fieldset .id_pw_box ul li label span 
+{
+    
+}
+main .container .contents .login_box form fieldset .id_pw_box ul li label input 
+{
+    border: 1px solid #e6e6e6;
+    margin-left:20px;
+    height: 30px; width: 285px;
+}
+main .container .contents .login_box form fieldset .id_pw_box ul li:nth-of-type(1) label input
+{
+    margin-left: 31px;
+}
+main .container .contents .login_box form fieldset p 
+{
+    float: left;
+    background-color: #1e61a8;
+    height: 67px; width: 75px;
+    text-align: center;
+    margin-left: 10px;
+}
+main .container .contents .login_box form fieldset p button {color: white; line-height: 67px;}
+main .container .contents .login_box form .join_search 
+{
+    margin-left: 125px; margin-top: 20px;
+}
+/* main .container .contents .login_box form .join_search a::after {clear: both; display: inline; content: '';} */
+main .container .contents .login_box form .join_search a
+{
+    /* line-height: 30px;  */text-align: center;
+    background-color: #555; color: white;
+    padding: 15px 10px
+    
+}
+/* 메인중앙로그인박스 */
+
+main .container >a i 
+{
+    width: 35px; height: 35px; border-radius: 50%; background-color: #888;
+    text-align: center; line-height: 35px; margin-right: 55px;
+}
+main .container >a 
+{
+    float: right;
+}
+main .container .btm_text 
+{
+    border: 1px solid gainsboro;
+    background-color: #e6e6e6;
+    width: 810px; height: 90px;
+    margin:170px auto 0px;
+}
+main .container .btm_text p 
+{
+    font-size: 0.75rem; margin-left: 120px; margin-top: 10px;
+}
+main .container .btm_text p em 
+{
+    font-size: 0.75rem; color: goldenrod;
+}
+/* 하단설명부분 */

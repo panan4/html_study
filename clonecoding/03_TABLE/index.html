@@ -7,20 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선불요금제(국제전화)</title>
-    <style>
-        table, tr, td, th {border:1px solid magenta;}
-    </style>
+    <link rel="stylesheet" href="./styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="./styles/main.css" type="text/css">
 </head>
 <body>
-    <table>
+    <table id="t">
         <thead>
-            <tr>
-                <th rowspan="2">로고</th>
+            <tr class="tr1">
+                <th rowspan="2" class="logo"></th>
                 <th colspan="4">선불요금제(국제전화)<br>
                     <span>합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</span>
                 </th>
             </tr>
-            <tr>
+            <tr class="tr2">
                 <!-- <td></td> -->
                 <th scope="col">기본요금<br><span>(부가세 포함금액)</span></th>
                 <th scope="col">음성</th>
@@ -29,7 +28,6 @@
             </tr>
         </thead>
         <tbody>
-            
             <tr>
                 <th scope="row">국제 선불 300M</th>
                 <th><em><span>47,000</span>원</em></th>

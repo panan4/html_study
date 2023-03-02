@@ -1,0 +1,44 @@
+#wrap {background-color: aqua; padding: 100px;}
+#wrap header {background-color: yellow;}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header nav {background-color: pink;}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li:nth-child(3) {border: 2px solid red;}
+#wrap header nav ul li:last-child a {border: 2px solid blue;}
+#wrap header nav ul li:first-child .lnb li:nth-child(3) a {background-color: magenta;}
+#wrap header nav > ul > li:first-child > a {border: 2px solid green; color: red;}
+#wrap header nav > ul > li:nth-last-child(3) a {font-weight: 700;}
+#wrap header nav ul li a {display: inline-block; padding: 5px;}
+/* ------------------------------------main-------------------------------------------------------------------- */
+#wrap main {}
+#wrap main section {}
+#wrap main section h2 {}
+#wrap main section p {}
+#wrap main section h2:nth-of-type(2) {background-color: blue;}
+#wrap main section h2:nth-of-type(1) {background-color: wheat;}
+#wrap main section p:first-of-type {color: red;}
+#wrap main section h2:last-of-type {color: yellow;}
+/* 
+(1) 수열선택자
+1. nth-child(~) 같은 부모 안의 형제를 구분할때 사용한다. ~번째를 가르키는 것을 설정(태그가 달라도 적용가능)
+ex)#wrap header h1:nth-child(1) a {} ->h1, 1번째 태그안에 a를 선택하겠다는 뜻.
+ex)#wrap header nav ul li:nth-child(3) {}
+2. 시작과 끝을 구분하는 수열선택자를 사용한다. first-child, last-child를 사용한다.
+3. 목록이 많을 경우 뒤에서 세기, nth-last-child(~)
+
+(2) 수열선택자
+선택자 - nth-child(~)는 요소구분X 형제구문O
+선택자 - nth-of-type(~)는 요소, 형제구문O
+ */
+#wrap main section:last-child .item {font-size: 2rem;}
+#wrap main section:last-child .item:nth-child(even) {background-color: yellow;}
+#wrap main section:last-child .item:nth-child(odd) {background-color: magenta;}
+#wrap main section:last-child .item:nth-child(3n+1) {border: 3px solid navy;}
+/* #wrap main section:last-child .item:nth-child(3n+1) {border: 3px solid mediumaquamarine;} */
+/* #wrap main section:last-child .item:nth-child(even) {background-color: yellow;}
+#wrap main section:last-child .item:nth-child(odd) {background-color: magenta;} */
+/* 위 두태그 nth-child(~) even=홀수 odd=짝수 ~n은 ~배수 그리고 1부터 시작해서 3의 배수로 가려면
++1을 사용하면 된다.*/
+
