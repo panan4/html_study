@@ -131,3 +131,9 @@ div,span/* 그룹태그 */<br>
 ctrl+k → ctrl+\ 누르면 위 아래로 볼 수 있다.(페이지 나누기)
 
 위아래 코드 순서바꾸기는 alt[방향키 위/아래](https://www.notion.so/9ec0a79cd8414d03b23cc4236392463d)
+<p>
+    가로 크기를 준 대상에게 줄 자동...으로 처리하게끔 하는 CSS에서의 방법이다.
+    width: 60%; <br>
+    text-overflow:ellipsis;/* 정해진 크기 안에서만 보기이게하기 */ <br>
+    white-space:nowrap;/* 한줄처리하기 */
+    </p>
