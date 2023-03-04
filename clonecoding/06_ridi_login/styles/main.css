@@ -1,0 +1,125 @@
+/* 
+속성선택자 
+class와 id를 제외한 name 혹은 value 값으로 선택자를 선택하는 방식이다.
+input[type*=rd] {background-color: aqua;}
+*/
+/* button[type$=it] {background-color: beige;} */
+/* 12p - 0.75 / 14 - 0.875 */
+body 
+{
+    background-color: #ebf6ff;
+}
+/* 배경색 */
+header, .login_box 
+{
+    text-align: center;
+}
+header 
+{
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+header h1 {} 
+header h1 a 
+{
+    color: #1f8ce6;
+    font-weight: 700;
+}
+/* 헤더 */
+.login_box {}
+.login_box #loginFrm 
+{
+    margin: 50px auto 0;
+    width: 350px;;
+    
+}
+.login_box #loginFrm fieldset {
+    
+}
+.login_box #loginFrm fieldset legend {}
+/* 폼 양식 */
+.login_box #loginFrm fieldset ul 
+{    
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+/*     border: 1px solid #ccc; */
+    width: 350px;}
+.login_box #loginFrm fieldset ul li:last-child 
+{    
+    border: 1px solid #ccc;
+    width: 350px; height: 42px;
+    background-color: #f7fbff;
+} 
+.login_box #loginFrm fieldset ul li 
+{
+    
+}
+.login_box #loginFrm fieldset ul li .user_login {}
+.login_box #loginFrm fieldset ul li .user_login ul {}
+.login_box #loginFrm fieldset ul li .user_login ul li {}
+.login_box #loginFrm fieldset ul li input[name^=user] 
+{
+    border: 1px solid #ccc;
+    width: 350px; height: 50px;
+    font-size: 0.75rem;
+    padding-left: 15px;
+} 
+.login_box #loginFrm fieldset ul li .user_login ul li input {}
+/* 아이디, 비밀번호 박스 */
+.login_box #loginFrm fieldset ul li label 
+{
+    color: gray;
+    font-size: 0.75rem;
+    float: left;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.login_box #loginFrm fieldset ul li label input {
+}
+.login_box #loginFrm fieldset ul li label input[id=id_check] {
+}
+.login_box #loginFrm fieldset ul li label span 
+{
+    line-height: 40px;
+    padding-left: 3px;
+    font-size: 0.75rem;
+}
+.login_box #loginFrm fieldset ul li span {float: right;}
+.login_box #loginFrm fieldset ul li span a 
+{
+    line-height: 40px;
+    font-size: 0.875rem;
+    padding-right: 5px;
+}
+/* 유저선택박스 */
+.login_box #loginFrm fieldset .user_regi_box {}
+.login_box #loginFrm fieldset .user_regi_box button[type^=sub] 
+{
+    width: 350px; height: 45px;
+    background-color: #1f8ce6;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 45px;
+    border-radius: 7px;
+    color: white;
+}
+.login_box #loginFrm fieldset .user_regi_box button 
+{
+    box-shadow: 0 0 5px gray;
+}
+.login_box #loginFrm fieldset .user_regi_box a 
+{
+    width: 350px; height: 45px;
+    background-color: #1f8ce6;
+    display: inline-block;
+    line-height: 45px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px gray;
+}
+.login_box #loginFrm fieldset .user_regi_box a:last-child
+{
+    background-color: white;
+}
+/* 로그인 및 회원가입 */

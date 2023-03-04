@@ -1,0 +1,83 @@
+body {}
+.box {
+    margin: 30px auto 0;
+    width: 600px; height: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    position: relative;
+    padding: 25px 20px 40px 30px;
+}
+.box .top {
+    
+}
+.box .top h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.box .top p {
+    border-radius: 15px;
+    width: 30px; height: 30px;
+    background-color: gainsboro;
+    position: absolute; right: 20px; top: 20px;
+}
+.box .main ul {
+    margin-top: 50px;
+    margin-left: 120px;
+    background-color: beige;
+}
+.box .main ul li::after {
+    clear: both; content: ''; display: inline-block;
+}
+.box .main ul li::before {
+    content: ''; display: inline-block;
+    width: 3px; height: 3px; background-color: black;
+    border-radius: 50%; 
+    position: absolute; bottom: 10px; left: -10px;
+    margin-right: 10px;
+}
+.box .main ul li {
+    position: relative;
+    padding: 5px 0;
+}
+.box .main ul li a::before {
+
+}
+.box .main ul li a {
+    /* background-color: beige; */
+    float: left;
+    width: 60%;
+    text-overflow:ellipsis;/* 정해진 크기 안에서만 보기이게하기 */
+    white-space:nowrap;/* 한줄처리하기 */
+    overflow: hidden;/* 외부처리 ...으로 말줄임 */
+    background-color: cornflowerblue;
+}
+.box .main ul li span {
+    float: right;
+}
+footer {
+    border-top: 1px solid gray;
+    margin-top: 40px;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+footer a {
+    
+}
+footer a:nth-child(3) {
+    color: blueviolet;
+}
+footer a::after {
+/*     content: '|';
+    display: inline;
+    padding-left: 10px;
+    margin-right: 10px; 
+    단점 : 글자 크기보다 작거나 크게 할 수 없다 이말.*/
+    width: 2px; height: 15px; background-color: red;
+    content: ''; display: inline-block;
+    position: relative;
+    right: -2px; bottom: -2px;
+    margin-left: 10px; margin-right: 10px;
+}
+footer a:last-child::after {
+    display: none;
+}

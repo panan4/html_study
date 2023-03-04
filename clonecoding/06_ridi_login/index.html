@@ -7,46 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인리디북스</title>
+    <link rel="stylesheet" href="./styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="./styles/main2.css" type="text/css">
+<!-- 폰트어썸외부경로주소 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <h1><a href="#"><img src="#" alt="RIDIVBOOKS"></a></h1>
+        <h1><a href="#">RIDIVBOOKS</a></h1>
     </header>
-    <div class="login_BOX">
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>로그인박스</legend>
-                    <ul>
-                        <li>
-                            <div class="user_login">
-                                <ul>
-                                    <li>
-                                        <input type="text" name="user_id" id="user_id" autofocus placeholder="아이디">
-                                    </li>
-                                    <li>
-                                        <input type="text" name="user_pw" id="user_pw" placeholder="비밀번호">
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                                    <label for="id_check">
-                                        <input type="checkbox" id="id_check" value="id_ch">
-                                        <span>로그인 상태 유지</span>
-                                    </label>
-                                    <span>
-                                        <a href="#">아이디 찾기</a> / 
-                                        <a href="#">비밀번호 재설정</a>
-                                    </span>
-                        </li>
-                    </ul>
-                    <div class="user_regi_BOX">
-                        <button type="submit">로그인</button>
-                        <a href="#">회원가입</a>
-                    </div>
-                </fieldset>
-            </form>
-        
+    <div class="login_box">
+        <form action="#" method="post" id="loginFrm">
+            <fieldset>
+                <legend>로그인박스</legend>
+                <ul>
+                    <li>
+                        <input type="text" name="user_id" id="user_id" autofocus placeholder="아이디">
+                    </li>
+                    <li>
+                        <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호">
+                    </li>
+                    <li>
+                        <label for="id_check">
+                            <input type="checkbox" id="id_check" value="id_ch">
+                            <span>로그인 상태 유지</span>
+                        </label>
+                        <span>
+                            <a href="#">아이디 찾기</a> | 
+                            <a href="#">비밀번호 재설정</a>
+                        </span>
+                    </li>
+                </ul>
+                <div class="user_regi_box">
+                    <button type="submit">로그인</button>
+                    <a href="#">회원가입</a>
+                </div>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
