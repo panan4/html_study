@@ -1,0 +1,38 @@
+body > * {background-color: aqua; margin: 0 auto;}
+header, main, footer {
+    width: 1150px; display: flex;
+}
+header {
+    background-color: beige;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {}
+header nav a {}
+header .h_right {}
+header .h_right a {}
+main {}
+main .visual {}
+main .visual video {
+}
+main .visual .ai {}
+main .visual .ai img {
+}
+footer {border-top: 1px solid black; background-color: blanchedalmond;
+
+}
+footer .f_container {}
+footer .f_container .f_top {
+    width: 1150px;
+    background-color: aliceblue;
+}
+footer .f_container .f_top .f_t_left {}
+footer .f_container .f_top .f_t_right {}
+footer .f_container .f_btm {}
+footer .f_container .f_btm address {}
+footer .f_container .f_btm address p {}
