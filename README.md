@@ -138,4 +138,25 @@ ctrl+k → ctrl+\ 누르면 위 아래로 볼 수 있다.(페이지 나누기)
     width: 60%; <br>
     text-overflow:ellipsis;/* 정해진 크기 안에서만 보기이게하기 */ <br>
     white-space:nowrap;/* 한줄처리하기 */
-    </p>
+</p>
+    <h2> 23.03.07 CSS </h2>
+<p>
+    글의 앞뒤에 |를 넣는 방법
+    width: 1px; height: 15px; background-color: grey;
+    content: ''; display: inline-block;
+    position: relative; right: -9px; top: 2px;
+    <br>
+    여러줄의 글을 외부처리 ...으로 하는방법
+        color: gray;
+    text-overflow:ellipsis;/* 정해진 크기 안에서만 보기이게하기 */
+    white-space:wrap;/* 한줄처리하기 */
+    overflow: hidden;/* 외부처리 ...으로 말줄임 */
+    -webkit-line-clamp: 3; /* 여러줄의 ...으로 말줄임 처리하는 법 작성 줄보다 -1줄을 적어야한다. */
+    -webkit-box-orient: vertical; /* 방향표시이며 버티컬은 수직 */
+    display:-webkit-box;
+<br>
+    Flex 사용법
+        display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+</p>
