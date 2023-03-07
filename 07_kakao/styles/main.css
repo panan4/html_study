@@ -1,0 +1,201 @@
+body {height: 300vh;
+    
+}
+header, main, footer { background-color: aqua;
+    /* overflow: hidden; */
+}
+header {    
+    background:rgba(0,0,0,0.6);
+    position:fixed; left: 0; top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 25px;
+    z-index: 9999;
+    /* position: sticky; top:0; */
+}
+header h1 {width: 200px;}
+header h1 a {
+    }
+header h1 a img {width: 100%;}
+header nav {}
+header nav a {color: #eee; margin-left: 25px}
+header nav a:hover {color:#fff}
+header nav a:nth-of-type(1) {margin-left: 0;}
+header .lnb {color: #eee; }
+header .lnb::after {
+    font-weight: 600;
+    display: inline;
+    content: '\f35a';
+    margin-left: 10px;
+    color: #17a2b8;
+}
+header .lnb:hover {color: #ff0;}
+/* ----------------------------------------------------------------------------- */
+main {
+    background-color: #f8f9fa;
+}
+
+main .visual {
+    height: 800px; overflow: hidden;
+    position: relative;
+}
+main .visual video {
+    width: 100%;
+}
+main .visual .ai {
+    position: absolute; left: 50%; top:50%;
+    transform: translate(-50%, -50%);
+}
+main .visual p {}
+main .board {
+    width: 1140px; margin: 50px auto; background-color: #f8f9fa;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main .board a > * {
+    font-size: 1.15rem;
+    letter-spacing: -0.02;
+    margin: 0 10px;
+    line-height: 1.5;
+}
+main .board a {
+    background-color: #fff;
+    width: 32%;
+}
+main .board a:nth-child(1) h2 {
+    margin-bottom: 20px;
+}
+main .board a:nth-child(2) h2 {
+    margin-top: 20px;
+}
+main .board a h2 {
+    font-size: 1.62rem;
+    font-weight: 600;
+}
+main .board a:first-child .cont {
+    text-overflow:ellipsis;/* 정해진 크기 안에서만 보기이게하기 */
+    white-space:wrap;/* 한줄처리하기 */
+    overflow: hidden;/* 외부처리 ...으로 말줄임 */
+    -webkit-line-clamp: 4; /* 여러줄의 ...으로 말줄임 처리하는 법 */
+    -webkit-box-orient: vertical; /* 방향표시이며 버티컬은 수직 */
+    display:-webkit-box;
+}
+main .board a .cate {
+}
+main .board a .cont {
+    color: gray;
+    margin-top: 80px;
+}
+/* ----------------------------------------------------------------------------- */
+main .gallery {
+    width: 1140px; margin: 0 auto; background-color: #f8f9fa;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .gallery a {
+    background-color: #fff;
+    width: 32%;
+}
+main .gallery a h2 {
+    font-size: 1.62rem;
+    font-weight: 600;
+}
+main .gallery a h2:hover {
+    text-decoration: line-through;
+}
+main .gallery a > * {
+    font-size: 1.15rem;
+    letter-spacing: -0.02rem;
+    margin:20px 30px;
+    line-height: 1.5;
+}
+
+main .gallery a .cate {}
+main .gallery a p {}
+main .gallery a p img {width: 100%;}
+main .gallery a:nth-child(2) .cont{
+    text-overflow:ellipsis;/* 정해진 크기 안에서만 보기이게하기 */
+    white-space:wrap;/* 한줄처리하기 */
+    overflow: hidden;/* 외부처리 ...으로 말줄임 */
+    -webkit-line-clamp: 2; /* 여러줄의 ...으로 말줄임 처리하는 법 */
+    -webkit-box-orient: vertical; /* 방향표시이며 버티컬은 수직 */
+    display:-webkit-box;
+}
+main .gallery a .cont {
+    color: gray;
+    text-overflow:ellipsis;/* 정해진 크기 안에서만 보기이게하기 */
+    white-space:wrap;/* 한줄처리하기 */
+    overflow: hidden;/* 외부처리 ...으로 말줄임 */
+    -webkit-line-clamp: 3; /* 여러줄의 ...으로 말줄임 처리하는 법 */
+    -webkit-box-orient: vertical; /* 방향표시이며 버티컬은 수직 */
+    display:-webkit-box;
+}
+/* ----------------------------------------------------------------------------- */
+footer {
+    border-top: 1px solid black;
+    background-color: #fff;
+}
+footer .f_container {
+    width: 1140px;
+    margin: 0 auto;
+}
+footer .f_container .f_top {
+    overflow: hidden;
+    margin: 30px 0;
+}
+footer .f_container .f_top .f_t_left {
+    float: left; height: 40px;
+}
+footer .f_container .f_top .f_t_left a {
+    margin-right: 10px;
+    line-height: 40px;
+}
+footer .f_container .f_top .f_t_left a::after {
+    /* content: '|'; margin-left: 10px; color: gray; */
+    width: 1px; height: 15px; background-color: grey;
+    content: ''; display: inline-block;
+    position: relative; right: -9px; top: 2px;
+}
+footer .f_container .f_top .f_t_left a:last-child:after {
+    display: none;
+}
+footer .f_container .f_top .f_t_left a:nth-child(1):hover {
+    text-decoration: underline
+}
+footer .f_container .f_top .f_t_left a:nth-child(2):hover {
+    text-decoration: underline
+}
+footer .f_container .f_top .f_t_left a:nth-child(3):hover {
+    text-decoration: underline
+}
+footer .f_container .f_top .f_t_left a:nth-child(4):hover {
+    text-decoration: underline
+}
+footer .f_container .f_top .f_t_left a:nth-child(5):hover {
+    text-decoration: underline
+}
+footer .f_container .f_top .f_t_right {
+    float: right;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+footer .f_container .f_top .f_t_right:hover {
+    background-color: #000;
+}
+footer .f_container .f_btm {
+    
+}
+footer .f_container .f_btm address {
+    line-height: 30px;
+    letter-spacing: -0.02rem;
+    color: gray;
+}
