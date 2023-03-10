@@ -387,5 +387,11 @@ footer .f_btm address div p {
     font-size: 0.875rem; margin: 10px 0 10px 20px;
 }
 footer .f_btm address div p img {}
-footer .f_btm .btm_logo {}
+footer .f_btm .btm_logo {
+}
 footer .f_btm .btm_logo a {}
+footer .top {
+/*     position: fixed; bottom 5px; right: 5px; */
+    position: relative; left:1200px ; bottom: 100px;
+}
+footer .top a {}
