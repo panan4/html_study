@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js1-1</title>
+<script>
+    //내부 스크립트
+    //var 그릇 - 빈 저장소
+    //var = 3 / 3이 데이터 대입(변수값)
+    //var = 2 / 3이 사라지고 2만 남는다.
+    //var data;
+    //data = 3; var는 선언문 data는 적용변수명 3은 변수값
+    //var box1 = 10;//box1에 10을 대입
+    //window.alert(box1)
+    //객체.속성
+    //객체.메소드()
+    var box1
+    var box2 = 1
+    console.log(box1)
+    box1 = 10
+    box2 = box1
+    console.log(box1)
+    box1 = 20
+    console.log(box1)
+    console.log(box2)
+    console.log(box1, box2)
+    console.log(typeof box1)
+    console.log(typeof box2)
+    var box3 = 'A'
+    console.log(typeof box3)
+    console.log(typeof box1+1)
+    console.log(typeof box3+'abc')
+
+    var box4 = '아이디를 입력하세요'
+    console.log(box4.length)
+
+    var a = 1
+    var b = a
+    var c = a + b + c /* 1,1,NaN(Nor a Number) */
+    console.log(a, b, c)
+</script>
+</head>
+<body>
+    
+</body>
+</html>
