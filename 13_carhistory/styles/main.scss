@@ -1,0 +1,71 @@
+//색상변수
+$point1:#189bfa;
+$point2:#ff5252;
+$bg1:#eee;
+$bg2:#fff;
+$star:#ff9e06;
+$txt1:#aaa;
+$txt2:#222;
+$txt3:#000;
+main {
+    background: url(../images/hero-bg-md-01.gif) center; height: 100vh; background-size: cover;
+    #visual{/* background-color: aqua; */ width: 1224px; margin: 0 auto;
+        h1{
+            padding-top: 150px; text-align: center; font-size: 3.75rem;
+            line-height: 1.3; letter-spacing: -0.07em;
+            span {font-size: 3.75rem; color: #189bfa; display: block;
+            }
+        }
+        .category{display: flex; justify-content: center;
+                margin: 30px 0;
+            a {background: rgba(255,255,255,0.9);
+                padding: 20px; position: relative;
+            }
+            a:first-child {background: $point2; color: $bg2;
+                border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+            }
+            a:last-child {
+                border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+            }
+            a:first-child::after {display: none;}
+            a::after {
+                content: ''; display: block; background-color: #ccc; height: 57px; width: 1px; position: absolute; top: 0; left: 0;
+            }
+        }
+        .view_box{
+            background: rgba(0,0,0,0.4); width: 85%; padding: 30px;
+            margin: 0 auto;
+            form {
+                fieldset{display: flex; justify-content: space-between;
+                    #number_view{padding: 20px;
+                        option{
+
+                        }
+                    }
+                    input {padding: 20px; width: 73%;}
+                    #view_btn {
+                        background: $point1; padding: 20px 30px; color: $bg2;
+
+                    }
+                }
+            }
+            .list {padding: 15px 0; margin-top: 20px;
+                display: flex; justify-content: space-between;
+                a { color: $bg2; padding: 5px 30px 5px 0px; position: relative;
+                    i {margin-left: 5px;}
+                }
+                a::after {
+                    content: ''; display: block; background-color: $bg2; height: 15px; width: 1px; position: absolute; top: 8px; right: 0;
+                }
+                a:nth-of-type(4)::after, a:nth-of-type(5)::after {display: none;}
+                .sample_view {
+                    background: url(../images/report-white.png) no-repeat; padding: 5px 20px 5px 30px; border: 1px solid $bg2; border-radius: 20px; background-position: left 10px center;
+                    margin-left: 50px;
+                }
+                .sample_view:hover {
+                    background-color: $point1;
+                }
+            }
+        }
+    }
+}

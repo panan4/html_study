@@ -1,0 +1,55 @@
+//색상변수
+$point1:#189bfa;
+$point2:#ff5252;
+$bg1:#eee;
+$bg2:#fff;
+$star:#ff9e06;
+$txt1:#aaa;
+$txt2:#222;
+$txt3:#000;
+//common.css통합 = header, Footer Design용으로 사용함.
+//main.css = Main Design header와 footer를 제외한 body의 main design
+//responsive.css = 반응형웹 Design
+#h_bg{
+    background: $bg2; position: fixed; left: 0; top: 0; z-index: 900;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3); width: 100%;
+    header{
+        height: 104px; width: 1224px; margin: 0 auto;
+        display: flex; justify-content: space-between; align-items: center;
+        h1{
+            a{
+                img{}
+            }
+        }
+        .right{
+            nav{
+                a:hover {color: $point1;}
+                .all_nav:hover {background-color: $point2; color: $bg2;}
+                a{padding: 15px 5px 15px 40px;}
+                a:nth-of-type(1){}
+                a:nth-of-type(2){
+                    background: url(../images/banner_gray2.png) no-repeat;
+                    background-position: 15px center; background-size: 20px;
+                }
+                a:nth-of-type(3){
+                    background: url(../images/language.png) no-repeat;
+                    background-position: 15px center; background-size: 20px;
+                }
+                a:nth-of-type(4){
+                    padding: 0; font-size: 1.7rem; font-weight: 700;
+                    background-size: 20px;
+                }
+                .all_nav{
+                    background: $point1 url(../images/allMenu.png) no-repeat;
+                    background-position: 10px center; 
+                    color: $bg2; padding: 15px 10px 15px 40px;
+                    
+                }
+/*                 .all_nav::before{
+                    background: url(../images/allMenu.png); width: 20px; height: 20px;
+                    content: ''; display: inline-block; position: absolute; left: 0;
+                } */
+            }
+        }
+    }
+}

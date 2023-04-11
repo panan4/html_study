@@ -1,0 +1,55 @@
+#h_bg {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 900;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+#h_bg header {
+  height: 104px;
+  width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#h_bg header .right nav {
+  /*                 .all_nav::before{
+                      background: url(../images/allMenu.png); width: 20px; height: 20px;
+                      content: ''; display: inline-block; position: absolute; left: 0;
+                  } */
+}
+#h_bg header .right nav a:hover {
+  color: #189bfa;
+}
+#h_bg header .right nav .all_nav:hover {
+  background-color: #ff5252;
+  color: #fff;
+}
+#h_bg header .right nav a {
+  padding: 15px 5px 15px 40px;
+}
+#h_bg header .right nav a:nth-of-type(2) {
+  background: url(../images/banner_gray2.png) no-repeat;
+  background-position: 15px center;
+  background-size: 20px;
+}
+#h_bg header .right nav a:nth-of-type(3) {
+  background: url(../images/language.png) no-repeat;
+  background-position: 15px center;
+  background-size: 20px;
+}
+#h_bg header .right nav a:nth-of-type(4) {
+  padding: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  background-size: 20px;
+}
+#h_bg header .right nav .all_nav {
+  background: #189bfa url(../images/allMenu.png) no-repeat;
+  background-position: 10px center;
+  color: #fff;
+  padding: 15px 10px 15px 40px;
+}/*# sourceMappingURL=common.css.map */
