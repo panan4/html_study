@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client1</title>
+    <style>
+        body, html {
+            height: 300vh;
+            background: linear-gradient(aqua, beige, yellow, pink, gold);
+
+        }
+        #pst {
+            padding: 50px; position: relative; top: 600px; background: #ff0;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="pst">위치</button>
+    <main>
+        <section class="s1">1</section>
+        <section class="s2">2</section>
+        <section class="s3">3</section>
+        <section class="s4">4</section>
+    </main>
+    <script>
+        const pst = document.querySelector('#pst')
+        console.log(pst)
+        window.addEventListener('scroll', ()=>{
+            //console.log(`offsetTop = ${pst.offsetTop}`)
+            console.log(`client=>${pst.getBoundingClientRect().y}`)
+            if(pst.getBoundingClientRect().top > 200 ){
+                pst.style.background = "#fff"
+            }
+            else{
+                pst.style.background = "#ff0"
+            }
+        })
+    </script>
+</body>
+</html>

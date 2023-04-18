@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        body, html {
+            scroll-behavior: smooth;
+        }
+        header{position: fixed;
+            height: 100px; width: 100%; top: 0;
+        }
+        header h1{
+            font-size: 2.5rem; font-weight: 700; text-align: center; line-height: 100px; background: rgba(255,255,255,0.5);
+        }
+        .img {height: 100vh;}
+        .img1 {background: url(./images/bg1.jpg) no-repeat center; background-size: cover;}
+        .img2 {background: url(./images/bg2.jpg) no-repeat center; background-size: cover;}
+        .img3 {background: url(./images/bg3.jpg) no-repeat center; background-size: cover;}
+        .img4 {background: url(./images/bg4.jpg) no-repeat center; background-size: cover;}
+        .btnm {
+            display: flex; flex-flow: row nowrap; justify-content: space-around; align-items: center;
+            width: 100%; height: 80px; padding: 0 500px; box-shadow: 2px 2px 5px #ccc ;
+            background-color:#fff;}
+        .btn {
+            padding: 15px 100px; width: 25%;
+        }
+            
+/*          .btn{background-color: #000; width: 30px; height: 30px; border-radius: 50%; display: block;
+            margin-top: 10px; overflow: hidden; transform-origin: right; position: absolute; right: 2%;} */
+        
+/*         .btn:hover {
+            background: rgba(0,0,0,0.3); border-radius: 15px; width: 100px; color: #fff;
+            transition: all .7s; text-align: center; line-height: 30px;
+        } */
+/*         .btn1 {top: 0;}
+        .btn2 {top: 40px;}
+        .btn3 {top: 80px;}
+        .btn4 {top: 120px;} */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Interior view
+        </h1>
+        <div class="btnm">
+            <a href="#" class="btn1 btn">A</a>
+            <a href="#" class="btn2 btn">B</a>
+            <a href="#" class="btn3 btn">C</a>
+            <a href="#" class="btn4 btn">D</a>
+        </div>
+    </header>
+    <div class="img1 img"></div>
+    <div class="img2 img"></div>
+    <div class="img3 img"></div>
+    <div class="img4 img"></div>
+
+    <script>
+        const btn = document.querySelectorAll('.btnm .btn')
+        const btnm = document.querySelector('.btnm')
+        const img = document.querySelectorAll('.img')
+        const header = document.querySelector('header')
+        console.log(btn)
+        console.log(img)
+
+        for(let i in img){
+            console.log(i)
+        }
+        btn.forEach((target,index)=>{
+            target.addEventListener('click', (e)=>{
+                /* console.log(".")//테스트용 */
+                e.preventDefault()
+                console.log(index)
+                window.scroll(0, img[index].offsetTop)
+            })
+        })
+        window.addEventListener('scroll',()=>{
+            if (window.pageYOffset >= 50){
+                console.log('O')
+                header.style.top = "-100px"
+                header.style.transition = "all .7s"
+            }
+            else {
+                console.log('X')
+                header.style.top = "0px"
+                header.style.transition = "all .7s"
+                
+            }
+        })
+    </script>
+</body>
+</html>
+
+<!-- window.addEventListener('scroll',()=>{
+    /* console.log("scroll")//스크롤테스트 */
+    window.scroll(0, img[index].offsetTop)
+}) -->
+<!-- /*         btn.forEach((target,index)=>{
+    target.addEventListener('mouseover', ()=>{
+        btn[index].classList.add('btnhover')
+    })
+    target.addEventListener('mouseout', ()=>{
+        btn[index].classList.remove('btnhover')
+    })
+}) */
+/*         for(let i of btn){
+    i.addEventListener('mouseover', ()=>{
+        i.classList.add('btnhover')
+    })
+} */
+/*         window.addEventListener('scroll', ()=>{
+    btn.forEach((target,index)=>{
+        target.addEventListener('click', (e)=>{
+            e.preventDefault()
+            console.log(".")
+            window.scrollTo(0, 1000)
+    })
+    })
+}) */ -->

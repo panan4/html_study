@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageYOffset</title>
+    <style>
+        body, html {
+            height: 300vh;
+            background: linear-gradient(aqua, yellow, pink, green);
+            scroll-behavior: smooth;
+        }
+        #go{position: fixed; left: 50px; top: 50px; padding: 50px;}
+        .box {height: 100vh; border: 5px solid #000;}
+        .box1 {}
+        .box2 {}
+        .box3 {}
+    </style>
+</head>
+<body>
+    <button type="button" id="go">Go</button>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <script>
+        //go버튼 클릭시 -> box2 위치(offsetTop)로 이동(scrollTo)
+
+        const go = document.querySelector('#go')
+        const box = document.querySelectorAll('.box')
+
+        //pageYOffset 수직으로 얼마나 스크롤 됐는지 반환해주는 속성이다.
+
+        window.addEventListener('scroll', ()=>{
+            /* console.log(window.pageYOffset) */
+
+            go.innerHTML = window.pageYOffset+'px'
+
+            if(window.pageYOffset > box[1].offsetTop ){
+                console.log('스크롤의 위치가 box2위치보다 크다.')
+            }
+            else{
+                console.log('스크롤의 위치가 box2위치보다 작다.')
+            }
+        })
+    </script>
+</body>
+</html>

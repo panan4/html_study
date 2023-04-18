@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageYOffset</title>
+    <style>
+        body, html {
+            height: 300vh;
+            background: linear-gradient(aqua, yellow, pink, green);
+            scroll-behavior: smooth;
+        }
+        header {
+            height: 150px; background: #222;
+            position: fixed; left: 0; top: 0; width: 100%;
+        }
+        .h_scroll {
+            background: #fff; height: 100px; text-align: center; margin: 0 auto; line-height: 100px;
+            font-size: 4rem; font-weight: 700;
+        }
+        section {
+            height: 100vh; text-align: center; line-height: 100vh;
+            font-size: 6rem; font-weight: 600; text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <section class="sec1">section1</section>
+        <section class="sec2">section2</section>
+        <section class="sec3">section3</section>
+    </main>
+    <script>
+        //변수
+        const header = document.querySelector('header')
+        const sec = document.querySelectorAll('section')
+        console.log(header, sec)
+        //이벤트
+        //sce2 스크롤 위치가 크거나 같다면 header에 h_scroll 클래스 적용
+        //sec2 스크롤 위치가 작으면 header에 h_scroll 클래스 해제
+        header.style.transition = "all .3s"
+        window.addEventListener('scroll', ()=>{
+            if (window.pageYOffset >= sec[1].offsetTop-200){
+                console.log('O')
+                header.classList.add('h_scroll')
+                header.innerHTML = "내가 헤더요 아시겠습니까?"
+            }
+            else {
+                console.log('X')
+                header.classList.remove('h_scroll')
+                
+            }
+        })
+    </script>
+</body>
+</html>
